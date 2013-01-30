@@ -1,0 +1,9 @@
+This is the scss_s, or scss for underscores, the wordpress theme.
+It's a scss framework that I am developing for personal use, and you are welcome to use it as you wish.
+It does not add to the design, it's just a base to start from. You can change it, add to it, tweak it... 
+
+I use scss_s with Compass and i'm aiming to change to the Susy grid in the future (still using Blueprint).
+
+Note: The scss files directory should be placed in the wordpress root directory. If you choose to use it elsewhere, edit the config.rb accordingly.
+
+...and maybe one day I'll update the readme with something useful. =P

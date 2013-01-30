@@ -1,0 +1,32 @@
+// this is a two-tiered variable system.
+// the descriptive variables are used as values for the functional variables.
+
+
+// descriptive variables
+
+// these variables are used to easily identify colors by name.
+
+$white             : #fff;
+$black             : #000;
+
+$attention-green   : #00b85d;
+$attention-red     : #ea3d2d;
+
+
+// functional variables
+
+// these variables exist to be used more functionally within the scss.
+// as they are abstract, you only need to change theyr value to see the changes in your layout (no find and replace!).
+
+$c-brand           : $black;
+
+$c-bg-main         : $white;
+$c-bg-header       : $white;
+$c-bg-footer       : $white;
+$c-text-main       : $black;
+$c-text-dark       : $black;
+$c-text-brand      : $c-brand;
+$c-border          : $c-brand;
+
+$c-success         : $attention-green;
+$c-error           : $attention-red;

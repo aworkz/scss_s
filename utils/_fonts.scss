@@ -1,0 +1,11 @@
+//fonts
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+//variables
+$f-regular    : "Lato", serif; // I use the simplified fallback. Mac gets Helvetica, Win gets Arial. Google doesn't usually go down, though. =P
+  //weights
+  $f-normal   : 400;
+  $f-light    : $f-normal;
+  $f-medium   : 700;
+  $f-bold     : $f-medium;

@@ -1,0 +1,134 @@
+html {
+  font-size                : 62.5%;  // Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790
+  -webkit-text-size-adjust : 100%;   // Prevents iOS text size adjust after orientation change, without disabling user zoom
+      -ms-text-size-adjust : 100%;   // www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+}
+body {
+  font-family: $f-regular;
+  @include font-size(12);
+  font-weight: $f-light;
+  @include line-height(18);
+}
+.entry-content {
+  p {
+    margin: ($vr * 1px) 0;
+    margin: ($vr * .1rem) 0;
+  }
+  ul,
+  ol {
+    margin: $vr * 1px 0 $vr * 1px 15px;
+  }
+  ul ul,
+  ol ol,
+  ul ol,
+  ol ul {
+    @extend ol;
+  }
+}
+
+// headers
+%headings {
+  font-family: $f-regular;
+  font-style: normal;
+  @include margin-bottom ($vr * 3);
+}
+h1, .alpha   {
+  @include font-size(22);
+
+  @extend %headings;
+}
+h2, .beta    {
+  @include font-size(20);
+  @include line-height(23);
+
+  @extend %headings;
+}
+h3, .gamma   {
+  @include font-size(18);
+  @include line-height(19);
+
+  @extend %headings;
+}
+h4, .delta   {
+  @include font-size(16);
+  @include line-height(17);
+
+  @extend %headings;
+}
+h5, .epsilon {
+  @include font-size(14);
+  @include line-height(15);
+
+  @extend %headings;
+}
+h6, .zeta    {
+  @include font-size(12);
+  @include line-height(13);
+
+  @extend %headings;
+}
+// // larger sizes
+// .kilo {
+//   @include font-size(25);
+//   @include line-height(30);
+// }
+// .mega {}
+// .giga {}
+
+.highlight {
+  color: $c-brand;
+  font-weight: $f-bold;
+}
+
+// less important text
+small, .mili {
+  @include font-size(12);
+  @include line-height(12);
+}
+.fineprint {
+}
+
+// text selection
+::selection {
+  background: $white;
+  color: $c-brand;
+}
+
+// links
+a,
+a:visited{
+  color: $c-brand;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+// other
+%all-caps {
+  text-transform: uppercase;
+}
+
+// setting bolds and italics
+b,
+strong {
+  font-weight: $f-bold;
+}
+em {
+  font-style: italic;
+}
+b em,
+strong em,
+em b,
+em strong {
+  font-weight: $f-bold;
+  font-style: italic;
+}
+del {
+  color: $c-error;
+}
+// non-breaking text
+%no-break {
+  display: inline-block;
+}

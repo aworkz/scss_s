@@ -1,0 +1,116 @@
+// rem with px fallbacks
+// example use: @include font-size (20);
+
+// type
+@mixin font-size ($n) {
+  font-size : $n * 1px;
+  font-size : $n * .1rem;
+}
+@mixin line-height ($n) {
+  line-height : $n * 1px;
+  line-height : $n * .1rem;
+}
+
+// sizing
+@mixin height ($n) {
+  height : $n * 1px;
+  height : $n * .1rem;
+}
+@mixin min-height ($n) {
+  min-height : $n * 1px;
+  min-height : $n * .1rem;
+}
+@mixin max-height ($n) {
+  max-height : $n * 1px;
+  max-height : $n * .1rem;
+}
+@mixin width ($n) {
+  width : $n * 1px;
+  width : $n * .1rem;
+}
+@mixin min-width ($n) {
+  min-width : $n * 1px;
+  min-width : $n * .1rem;
+}
+@mixin max-width ($n) {
+  max-width : $n * 1px;
+  max-width : $n * .1rem;
+}
+
+//margin
+@mixin margin ($t, $r, $b, $l) {
+  margin : $t * 1px   $r * 1px   $b * 1px   $l * 1px;
+  margin : $t * .1rem $r * .1rem $b * .1rem $l * .1rem;
+}
+@mixin margin-short ($n) {
+  margin : $n * 1px;
+  margin : $n * .1rem;
+}
+@mixin margin-pair ($v, $h) {
+  margin : $v * 1px $h * 1px;
+  margin : $v * .1rem $h * .1rem;
+}
+@mixin margin-top ($n) {
+  margin-top : $n * 1px;
+  margin-top : $n * .1rem;
+}
+@mixin margin-right ($n) {
+  margin-right : $n * 1px;
+  margin-right : $n * .1rem;
+}
+@mixin margin-bottom ($n) {
+  margin-bottom : $n * 1px;
+  margin-bottom : $n * .1rem;
+}
+@mixin margin-left ($n) {
+  margin-left : $n * 1px;
+  margin-left : $n * .1rem;
+}
+
+//padding
+@mixin padding ($t, $r, $b, $l) {
+  padding : $t * 1px   $r * 1px   $b * 1px   $l * 1px;
+  padding : $t * .1rem $r * .1rem $b * .1rem $l * .1rem;
+}
+@mixin padding-short ($n) {
+  padding : $n * 1px;
+  padding : $n * .1rem;
+}
+@mixin padding-pair ($v, $h) {
+  padding : $v * 1px $h * 1px;
+  padding : $v * .1rem $h * .1rem;
+}
+@mixin padding-top ($n) {
+  padding-top : $n * 1px;
+  padding-top : $n * .1rem;
+}
+@mixin padding-right ($n) {
+  padding-right : $n * 1px;
+  padding-right : $n * .1rem;
+}
+@mixin padding-bottom ($n) {
+  padding-bottom : $n * 1px;
+  padding-bottom : $n * .1rem;
+}
+@mixin padding-left ($n) {
+  padding-left : $n * 1px;
+  padding-left : $n * .1rem;
+}
+
+//positioning
+@mixin top  ($n) {
+  top : $n * 1px;
+  top : $n * .1rem;
+}
+@mixin right  ($n) {
+  right : $n * 1px;
+  right : $n * .1rem;
+}
+@mixin bottom  ($n) {
+  bottom : $n * 1px;
+  bottom : $n * .1rem;
+}
+@mixin left  ($n) {
+  left : $n * 1px;
+  left : $n * .1rem;
+}

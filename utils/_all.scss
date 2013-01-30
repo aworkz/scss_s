@@ -1,0 +1,26 @@
+// this file imports all relevant partials in the directory
+
+
+// the 'utils' files have all sorts of variables and mixins for you to use
+
+@import 'tool-imports'; // import useful tools like css3 @mixins from compass or blueprint grid (configure whitch ones in file)
+@import 'colors'; // define your color variables here
+@import 'fonts';  // define fonts here
+@import 'grid';
+@import 'mixins'; // some extra mixins to use
+
+
+// underscores basic styles
+
+@import 'reset-underscores'; // main css delivered with underscores. edit it as needed.
+// these are the available layouts delivered with underscores. uncomment the one you wish to use.
+//@import 'layouts/content-sidebar-sidebar';
+//@import 'layouts/content-sidebar';
+//@import 'layouts/sidebar-content-sidebar';
+//@import 'layouts/sidebar-content';
+//@import 'layouts/sidebar-sidebar-content';
+
+
+// placeholder classes. I import them after the underscore basic styles to avoid them being overridden, since this is the place in css where classes appear when the placeholders are extended.
+
+@import 'placeholders';

@@ -1,0 +1,20 @@
+// these are configurable variables of the blueprint grid that comes with compass
+// considering changing to suzy...
+
+$blueprint-container-size : 960px;
+$blueprint-grid-columns   : 12;
+$blueprint-grid-width     : 69px;
+$blueprint-grid-margin    : 12px;
+
+
+// more variables to use that are not from compass or blueprint
+
+$window-width : 1000px; // I use this when I have a conainer that needs a background or something like that and it's larger than the page layout
+$layout-width : $blueprint-container-size; // a more functional variable.
+
+
+// I usually use a vertical grid with vertical rhythm for typographic
+
+$vr: 6;           // vertical rhythm. I usually use multiples of 6 for line-height in my layouts
+$mb: (3 * $vr);   // general margin-bottom for containers. this maintains consistency and vertical rhythm throughout the layout
+

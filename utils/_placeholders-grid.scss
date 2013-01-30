@@ -1,0 +1,113 @@
+// these are placeholder classes for the grid.
+// This is the way I have to create a semantic grid.
+// There's probably a simpler way to create these with a function, but that's beyond me atm... =P
+
+// grid placeholders
+%span-1 {
+  @include margin-right(12);
+  width: span(1);
+  @extend %float-left;
+}
+%span-1-right {
+  width: span(1);
+  @extend %float-right;
+}
+%span-2 {
+  @include margin-right(12);
+  width: span(2);
+  @extend %float-left;
+}
+%span-2-right {
+  width: span(2);
+  @extend %float-right;
+}
+%span-3 {
+  @include margin-right(12);
+  width: span(3);
+  @extend %float-left;
+}
+%span-3-right {
+  width: span(3);
+  @extend %float-right;
+}
+%span-4 {
+  @include margin-right(12);
+  width: span(4);
+  @extend %float-left;
+}
+%span-4-right {
+  width: span(4);
+  @extend %float-right;
+}
+%span-5 {
+  @include margin-right(12);
+  width: span(5);
+  @extend %float-left;
+}
+%span-5-right {
+  width: span(5);
+  @extend %float-right;
+}
+%span-6 {
+  @include margin-right(12);
+  width: span(6);
+  @extend %float-left;
+}
+%span-6-right {
+  width: span(6);
+  @extend %float-right;
+}
+%span-7 {
+  @include margin-right(12);
+  width: span(7);
+  @extend %float-left;
+}
+%span-7-right {
+  width: span(7);
+  @extend %float-right;
+}
+%span-8 {
+  @include margin-right(12);
+  width: span(8);
+  @extend %float-left;
+}
+%span-8-right {
+  width: span(8);
+  @extend %float-right;
+}
+%span-9 {
+  @include margin-right(12);
+  width: span(9);
+  @extend %float-left;
+}
+%span-9-right {
+  width: span(9);
+  @extend %float-right;
+}
+%span-10 {
+  @include margin-right(12);
+  width: span(10);
+  @extend %float-left;
+}
+%span-10-right {
+  width: span(10);
+  @extend %float-right;
+}
+%span-11 {
+  @include margin-right(12);
+  width: span(11);
+  @extend %float-left;
+}
+%span-11-right {
+  width: span(11);
+  @extend %float-right;
+}
+%span-12 {
+  @include margin-right(12);
+  width: span(12);
+  @extend %float-left;
+}
+%span-12-right {
+  width: span(12);
+  @extend %float-right;
+}
