@@ -21,6 +21,12 @@
 //@import 'layouts/sidebar-sidebar-content';
 
 
-// placeholder classes. I import them after the underscore basic styles to avoid them being overridden, since this is the place in css where classes appear when the placeholders are extended.
+// placeholder classes. 
+// I import them after the underscore basic styles to avoid them being overridden, 
+// since this is the place in css where classes appear when the placeholders are extended.
 
 @import 'placeholders';
+
+
+// sprites
+// @import "sprites";
