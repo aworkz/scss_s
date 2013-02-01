@@ -14,6 +14,9 @@
 %last-column {
   margin-right: 0 !important;
 }
+%ie8-last-column {
+  margin-right: 0 !important;
+}
 %float-left {
   float: left;
 }
@@ -33,7 +36,12 @@
       clear: both;
   }
 }
-
+// clears lists. better used on ul
+%unstyled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 // hiding text for image replacement. I don't remember where I got this technique from, but I love it
 // haven't tested it, but I think it's good for ltr and rtl text directions. tell me if it doesn't work in rtl, I'm too lazy to go try it =P
 %hide-text {
@@ -51,4 +59,22 @@
   position: absolute;
   left: 0;
   width: 100%;
+}
+
+// transitions
+// fade in/out
+  // when fading out, height:0 in combination with overflow:hidden, removes the element completely, allowing clicks under it.
+  // may require you to define heigh and overflow in the element when it is in view, depending on how you are doing it.
+  // i usualy extend fade-out in the .element-class and then extend fade-in in .element-class.open.
+%fade-in {
+  opacity: 1;
+  -webkit-transition: opacity 0.25s ease-out, height 0 linear 0;
+          transition: opacity 0.25s ease-out, height 0 linear 0;
+}
+%fade-out {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 1.25s ease-in, height 0 linear 0.25s;
+          transition: opacity 1.25s ease-in, height 0 linear 0.25s;
 }
