@@ -9,21 +9,19 @@ body {
   font-weight: $f-light;
   @include line-height(18);
 }
-.entry-content {
-  p {
-    margin: ($vr * 1px) 0;
-    margin: ($vr * .1rem) 0;
-  }
-  ul,
-  ol {
-    margin: $vr * 1px 0 $vr * 1px 15px;
-  }
-  ul ul,
-  ol ol,
-  ul ol,
-  ol ul {
-    @extend ol;
-  }
+p {
+  margin: ($vr * 1px) 0;
+  margin: ($vr * .1rem) 0;
+}
+ul,
+ol {
+  margin: $vr * 1px 0 $vr * 1px 15px;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  @extend ol;
 }
 
 // headers
