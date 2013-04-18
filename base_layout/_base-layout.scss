@@ -1,7 +1,7 @@
 // the general layout of the page is defined here.
 // you can either dump all your styles here, or be more organized and divide them in smaller files like _header.scss, _footer.scss
 
-// border box sizing for all elements. helps with measures and grid.
+// border box sizing for all elements. Susy mixin, helps with measures and grid.
 @include border-box-sizing;
 
 body {
