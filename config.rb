@@ -1,5 +1,8 @@
 # Require any additional compass plugins here.
 
+# Suzy grid. It's awesome! http://susy.oddbird.net/
+require "susy"
+
 # Set this to the root of your project when deployed.
 # Scss_s dir should be inside wp-content/scss/. If you prefer to put it elsewhere, make the necessary changes 
 http_path = "../../themes/<THEME NAME>/"

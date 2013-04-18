@@ -1,20 +1,25 @@
-// these are configurable variables of the blueprint grid that comes with compass
-// considering changing to suzy...
+// using Susy grid: http://susy.oddbird.net/
+// these are configurable variables of the Susy grid
 
-$blueprint-container-size : 960px;
-$blueprint-grid-columns   : 12;
-$blueprint-grid-width     : 69px;
-$blueprint-grid-margin    : 12px;
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 69px;           // each column's width - use pixels here, Suzy will convert to percentage
+$gutter-width   : 12px;           // gutters' width between columns - use pixels here, Suzy will convert to percentage
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
 
+// media layouts
+// http://susy.oddbird.net/guides/reference/#ref-media-layouts
+// $media-layout: <min-width> <layout> <max-width> <ie-fallback>;
+// - You must supply either <min-width> or <layout>.
 
-// more variables to use that are not from compass or blueprint
+$tablet         : 9 890px;
+$phone          : 4 720px;
 
-$window-width : 1000px; // I use this when I have a conainer that needs a background or something like that and it's larger than the page layout
-$layout-width : $blueprint-container-size; // a more functional variable.
+// more variables to use that are not from compass or susy
 
+// I usually use a baseline grid with vertical rhythm for typography, which I got here: http://www.teehanlax.com/downloads/baseline-grid/
+// vertical rhythm unit. I use multiples of 6 for line-height in my layouts
+$vr : 6;
 
-// I usually use a vertical grid with vertical rhythm for typographic
-
-$vr: 6;           // vertical rhythm. I usually use multiples of 6 for line-height in my layouts
-$mb: (3 * $vr);   // general margin-bottom for containers. this maintains consistency and vertical rhythm throughout the layout
-
+// general margin-bottom for containers. this maintains consistency and vertical rhythm throughout the layout.
+// note that height should be set in multiples of $vr (you should compensate when adding borders if you disable border box sizing).
+$mb : (3 * $vr);

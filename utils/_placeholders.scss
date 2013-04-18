@@ -49,11 +49,6 @@
   text-indent: 100%;
   white-space: nowrap;
 }
-// sets container's width the same as the site's and centers it 
-%outer-container {
-  margin: 0 auto;
-  width: $blueprint-container-size;
-}
 // occupies full width when not inside any element with declared position
 %full-width {
   position: absolute;
