@@ -1,11 +1,12 @@
 # Require any additional compass plugins here.
 
-# Set this to the root of your project when deployed:
-http_path = "../../../wp-content/themes/<THEME NAME>/"
-css_dir = "../../../wp-content/themes/<THEME NAME>/"
+# Set this to the root of your project when deployed.
+# Scss_s dir should be inside wp-content/scss/. If you prefer to put it elsewhere, make the necessary changes 
+http_path = "../../themes/<THEME NAME>/"
+css_dir = "../../themes/<THEME NAME>/"
 sass_dir = "/"
-images_dir = "../../../wp-content/themes/<THEME NAME>/images"
-javascripts_dir = "../../../wp-content/themes/<THEME NAME>/js"
+images_dir = "../../themes/<THEME NAME>/images"
+javascripts_dir = "../../themes/<THEME NAME>/js"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
