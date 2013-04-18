@@ -1,6 +1,6 @@
 // These are placeholder classes for the grid. They use Susy's mixins to determine width and margins.
 // This is the way I have to create a semantic grid, and avoid cluttering the css with repeating rules. Yes, placeholders rule.
-// These are only for for layout aware situations. If not given a context, Suzy will use the $total-columns.
+// These are only for for layout aware situations. If not given a context, Susy will use the $total-columns.
 // There's probably a simpler way to create these with a function, but that's beyond me atm... =P
 
 // grid placeholders:

@@ -1,6 +1,6 @@
 # Require any additional compass plugins here.
 
-# Suzy grid. It's awesome! http://susy.oddbird.net/
+# Susy grid. It's awesome! http://susy.oddbird.net/
 require "susy"
 
 # Set this to the root of your project when deployed.

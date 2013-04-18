@@ -2,8 +2,8 @@
 // these are configurable variables of the Susy grid
 
 $total-columns  : 12;             // a 12-column grid
-$column-width   : 69px;           // each column's width - use pixels here, Suzy will convert to percentage
-$gutter-width   : 12px;           // gutters' width between columns - use pixels here, Suzy will convert to percentage
+$column-width   : 69px;           // each column's width - use pixels here, Susy will convert to percentage
+$gutter-width   : 12px;           // gutters' width between columns - use pixels here, Susy will convert to percentage
 $grid-padding   : $gutter-width;  // grid-padding equal to gutters
 
 // media layouts
