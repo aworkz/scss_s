@@ -23,6 +23,17 @@ ul ol,
 ol ul {
   @extend ol;
 }
+a {
+  color: $c-link;
+}
+a:visited {
+  color: $c-visited;
+}
+a:hover,
+a:focus,
+a:active {
+  color: $c-hover;
+}
 
 // headers
 %headings {

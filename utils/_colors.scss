@@ -6,27 +6,47 @@
 
 // these variables are used to easily identify colors by name.
 
-$white             : #fff;
-$black             : #000;
+$white                : #fff;
+$gray75               : #bfbfbf;
+$black                : #000;
 
-$attention-green   : #00b85d;
-$attention-red     : #ea3d2d;
+$attention-green      : #00b85d;
+$attention-red        : #ea3d2d;
 
 
 // functional variables
-
 // these variables exist to be used more functionally within the scss.
 // as they are abstract, you only need to change their value to see the changes in your layout (no find and replace!).
+//main
 
-$c-brand           : $black;
+$c-brand              : $black;
 
-$c-bg-main         : $white;
-$c-bg-header       : $white;
-$c-bg-footer       : $white;
-$c-text-main       : $black;
-$c-text-dark       : $black;
-$c-text-brand      : $c-brand;
-$c-border          : $c-brand;
+$c-bg-main            : transparentize($white, .25);
+$c-bg-main-fallback   : $white; // add an rgb fallback for alpha colors if you need backwards compatibility
+$c-bg-header          : transparentize($black, .1);
+$c-bg-header-fallback : $black;
+$c-bg-footer          : $c-bg-main;
 
-$c-success         : $attention-green;
-$c-error           : $attention-red;
+$c-text-main          : $gray75;
+$c-text-dark          : $black;
+$c-text-brand         : $c-brand;
+$c-text-invert        : $white;
+
+$c-container          : transparentize($white, .5);
+$c-container-fallback : $white;
+$c-border             : $gray75;
+$c-shadow             : transparentize($black, .3); // no need for fallbacks whe you're going to use css3... =)
+
+$important-action     : $orange;
+
+$c-success            : $attention-green;
+$c-error              : $attention-red;
+
+// links
+$c-link               : $c-brand;
+$c-visited            : $c-text-dark;
+$c-hover              : $c-text-dark;
+$c-focus              : $c-hover;
+$c-active             : $c-hover;
+
+// specific - add here the variables you need for your layout
