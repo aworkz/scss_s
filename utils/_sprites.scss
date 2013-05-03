@@ -1,7 +1,8 @@
 // here is where you import a directory full of images and compass will generate the sprites for you
 // http://maddesigns.de/sass-compass-introduction/#106
 
+// sprite example 
 // i'm usig icon as the sprite-map name. use whatever you want. this name comes from the directory in whitch the images are stored.
-// $icon-spacing: 50px;   // use this if you need to change spacing between images in your sprite. however, there's a bug when you wat to offset a sprite, compass screws up the math...
+// $icon-spacing: 10px;   // use this if you need to change spacing between images in your sprite.
 // @import "icon/*.png";
-// $icon-sprite: sprite-map("icon/*.png");  // a variable that might prove useful for some situations
+// $icon-sprite: sprite-map( "icon/*.png", $spacing: $icon-spacing );  // a variable that might prove useful for some situations. the $spacing as the second value is needed as a workaround for a math bug when offsetting the sprite
