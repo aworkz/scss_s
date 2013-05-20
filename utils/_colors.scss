@@ -17,8 +17,8 @@ $attention-red        : #ea3d2d;
 // functional variables
 // these variables exist to be used more functionally within the scss.
 // as they are abstract, you only need to change their value to see the changes in your layout (no find and replace!).
-//main
 
+//main
 $c-brand              : $black;
 
 $c-bg-main            : transparentize($white, .25);
@@ -37,7 +37,7 @@ $c-container-fallback : $white;
 $c-border             : $gray75;
 $c-shadow             : transparentize($black, .3); // no need for fallbacks whe you're going to use css3... =)
 
-$important-action     : $orange;
+$important-action     : $attention-green;
 
 $c-success            : $attention-green;
 $c-error              : $attention-red;
