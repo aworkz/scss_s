@@ -52,7 +52,8 @@
   left: 0;
   width: 100%;
 }
-// to be used on a container of floated elements without using nth-child to remove margin on the last item in a line (ie-friendly) 
+// to be used on a container of floated elements without using nth-child to remove margin on the last item in a line (ie-friendly)
+// list items, however, must have max-width set in px so they don't expand size with the increased width of the container, and still be responsive
 %floated-list-container {
   width: 100% + gutter() * 1.2;
 
