@@ -1,0 +1,112 @@
+.woocommerce, .woocommerce-page { // namespace to avoid conflict with common global class names
+
+  a.button, button.button, input.button, #respond input#submit, #content input.button {
+    font-size: 100%;
+      margin: 0;
+      line-height: 1em;
+      cursor: pointer;
+      position: relative;
+      font-family: inherit;
+    text-decoration:none;
+    overflow: visible;
+    padding: 6px 10px;
+      text-decoration:none;
+      font-weight:bold;
+      @include border_radius(2px);
+      left: auto;
+      text-shadow:0 1px 0 $secondary + #111;
+      color: $secondarytext;
+      @include darkorlighttextshadow( $secondarytext );
+      border: 1px solid darken( $secondary, 20 );
+    @include vertical_gradient( $secondary, darken( $secondary, 10 ) );
+    white-space: nowrap;
+    display: inline-block;
+
+      -webkit-box-shadow:
+          inset 0 -1px 0 rgba(0,0,0,0.075),
+          inset 0 1px 0 rgba(255,255,255,0.3),
+          0 1px 2px rgba(0,0,0,0.1);
+      -moz-box-shadow:
+          inset 0 -1px 0 rgba(0,0,0,0.075),
+          inset 0 1px 0 rgba(255,255,255,0.3),
+          0 1px 2px rgba(0,0,0,0.1);
+      box-shadow:
+          inset 0 -1px 0 rgba(0,0,0,0.075),
+          inset 0 1px 0 rgba(255,255,255,0.3),
+          0 1px 2px rgba(0,0,0,0.1);
+
+    &.loading {
+      color: lighten( $secondarytext, 10 );
+      border: 1px solid $secondary;
+
+      &:before {
+        content: "";
+        position:absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: url(/wp-content/plugins/woocommerce/assets/images/ajax-loader.gif) center no-repeat rgba(255,255,255,0.65);
+
+        @media
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+          background-image: url(/wp-content/plugins/woocommerce/assets/images/ajax-loader@2x.gif);
+          background-size: 16px 16px;
+        }
+      }
+    }
+
+    &.added {
+      &:before {
+        content: "";
+        position:absolute;
+        height: 16px;
+        width: 16px;
+        top: 0.35em;
+        right: -26px;
+        text-indent: 0;
+        background: url(/wp-content/plugins/woocommerce/assets/images/success.png) no-repeat;
+
+        @media
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+          background: url(/wp-content/plugins/woocommerce/assets/images/success@2x.png) no-repeat;
+          background-size:16px 14px;
+        }
+      }
+    }
+
+    &:hover {
+      @include vertical_gradient( $secondary, darken( $secondary, 15 ) );
+      text-decoration:none;
+    }
+
+    &:active {
+      top: 1px;
+    }
+
+    &.alt {
+      @include vertical_gradient( $primary, darken( $primary, 10 ) );
+      border-color: darken($primary, 20);
+      color: $primarytext;
+      @include darkorlighttextshadow( $primarytext, 0.6 );
+
+      &:hover {
+        @include vertical_gradient( $primary, darken( $primary, 15 ) );
+        color:$primarytext + #111;
+        @include darkorlighttextshadow( $primarytext + #111, 0.6 );
+      }
+    }
+  }
+
+  .cart .button, .cart input.button {
+    float:none;
+  }
+
+  a.added_to_cart {
+    padding-top: .5em;
+    white-space: nowrap;
+    display: inline-block;
+  }
+}

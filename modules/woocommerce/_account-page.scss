@@ -1,0 +1,43 @@
+.woocommerce, .woocommerce-page { // namespace to avoid conflict with common global class names
+
+  .addresses {
+    .title {
+      @extend %clearfix;
+
+      h3 {
+        float:left;
+      }
+      .edit {
+        float: right;
+      }
+    }
+  }
+
+  ol.commentlist.notes {
+    li.note {
+
+      p.meta {
+        font-weight:bold;
+        margin-bottom: 0;
+      }
+      .description {
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  ul.digital-downloads {
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      list-style:none;
+      margin-left: 0;
+      padding-left: 1.5em;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAQUlEQVQIHWP8//8/AwgwMjLWgxlQAijeCGIyIQtiYxNUwAjUhWI0uilMMLvQJUB8kBzYCmyKYGJwN8AEYDphJgIAPtccffZCsOoAAAAASUVORK5CYII=) left no-repeat; /* download icon */
+      .count {
+        float: right;
+      }
+    }
+  }
+}

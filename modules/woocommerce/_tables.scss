@@ -1,0 +1,100 @@
+.woocommerce, .woocommerce-page { // namespace to avoid conflict with common global class names
+
+  table.shop_attributes {
+    border: 0;
+    border-top: 1px dotted rgba(0,0,0,0.1);
+    margin-bottom: 1.618em;
+    width: 100%;
+    th {
+      width: 150px;
+      font-weight:bold;
+      padding: 8px;
+      border-top: 0;
+      border-bottom: 1px dotted rgba(0,0,0,0.1);
+      margin: 0;
+      line-height: 1.5em;
+    }
+    td {
+      font-style: italic;
+      padding: 0;
+      border-top: 0;
+      border-bottom: 1px dotted rgba(0,0,0,0.1);
+      margin: 0;
+      line-height: 1.5em;
+      p {
+        margin: 0;
+        padding: 8px 0;
+      }
+    }
+    .alt td, .alt th {
+      background: rgba(0,0,0,0.025);
+    }
+  }
+
+  table.shop_table {
+    border: 1px solid rgba(0,0,0,0.1);
+    margin: 0px -1px 24px 0px;
+    text-align:left;
+    width: 100%;
+    border-collapse: separate;
+    @include border_radius(5px);
+    th {
+      font-weight:bold;
+      line-height: 18px;
+      padding: 9px 12px;
+    }
+    td {
+      border-top: 1px solid rgba(0,0,0,0.1);
+      padding: 6px 12px;
+      vertical-align: middle;
+      small {
+        font-weight: normal;
+      }
+    }
+    tfoot td, tfoot th {
+      font-weight:bold;
+      border-top: 1px solid rgba(0,0,0,0.1);
+    }
+  }
+
+  table.my_account_orders {
+    font-size: 0.85em;
+    th, td {
+      padding: 4px 8px;
+      vertical-align: middle;
+    }
+    .button {
+      white-space:nowrap;
+    }
+    .order-actions {
+      text-align: right;
+      .button {
+        margin: .125em 0 .125em .25em;
+      }
+    }
+  }
+
+  td.product-name {
+    dl.variation {
+      margin: .25em 0 .5em;
+      font-size: 0.8751em;
+      dt {
+        font-weight:bold;
+        float:left;
+        clear:left;
+        margin: 0 .25em 0 0;
+        padding: 0;
+      }
+      dd {
+        margin: 0 0 .25em 0;
+      }
+    }
+    p.backorder_notification {
+      font-size: 0.83em;
+    }
+  }
+
+  td.product-quantity {
+    min-width: 80px;
+  }
+}

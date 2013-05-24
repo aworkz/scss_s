@@ -1,0 +1,58 @@
+.woocommerce, .woocommerce-page { // namespace to avoid conflict with common global class names
+
+  ul.cart_list, ul.product_list_widget {
+    list-style:none outside;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 4px 0;
+      margin: 0;
+      list-style:none;
+      @extend %clearfix;
+      a {
+        display:block;
+        font-weight:bold;
+      }
+      img {
+        float: right;
+        margin-left: 4px;
+        width: 32px;
+        height:auto;
+        @include box_shadow(0,1px,2px,0,rgba(0,0,0,0.3));
+      }
+      dl {
+        margin: 0;
+        font-size: 0.8751em;
+        padding-left: 1em;
+        border-left: 2px solid rgba(0,0,0,0.1);
+
+        dt {
+          float:left;
+          clear:left;
+          margin-right: .25em;
+        }
+
+        dd {
+          margin-bottom: .5em;
+        }
+      }
+      .star-rating {
+        float:none;
+      }
+    }
+  }
+
+  .widget_shopping_cart {
+    .total {
+      border-top: 3px double $secondary;
+      padding: 4px 0 0;
+      strong {
+        min-width: 40px;
+        display: inline-block;
+      }
+    }
+    .buttons {
+      @extend %clearfix;
+    }
+  }
+}

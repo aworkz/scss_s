@@ -1,0 +1,3 @@
+$tertiary:      $primary;                                   // Price slider bar / layered nav UI
+$tertiarytext:  $primarytext;                               // Text on tertiary colour bg
+$quaternary:    desaturate( darken( $tertiary, 45%), 40% ); // Price slider bg

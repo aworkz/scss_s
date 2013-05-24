@@ -1,0 +1,62 @@
+.woocommerce, .woocommerce-page { // namespace to avoid conflict with common global class names
+
+  .widget_layered_nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      list-style:none outside;
+      li {
+        padding: 0 0 1px;
+        list-style:none;
+        @extend %clearfix;
+        a, span {
+          padding: 1px 0;
+          float:left;
+        }
+      }
+      li.chosen {
+        a {
+          padding: 0 6px 0 18px;
+          border: 1px solid $tertiary;
+          background: $tertiary url(/wp-content/plugins/woocommerce/assets/images/cross_white.png) no-repeat 6px center;
+          @include inset_box_shadow(0, 1px, 1px, rgba(255,255,255,0.5));
+          color: $tertiarytext;
+          @include border_radius(3px);
+        }
+      }
+      small.count {
+        float: right;
+        margin-left: 6px;
+        font-size: 1em;
+        padding: 1px 0;
+        color: $subtext;
+      }
+    }
+  }
+
+  .widget_layered_nav_filters {
+    ul {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      list-style:none outside;
+      overflow: hidden;
+      zoom: 1;
+      li {
+        float: left;
+        padding: 0 1px 1px 0;
+        list-style:none;
+        a {
+          padding: 0 6px 0 18px;
+          border: 1px solid $tertiary;
+          background: $tertiary url(/wp-content/plugins/woocommerce/assets/images/cross_white.png) no-repeat 6px center;
+          @include inset_box_shadow(0, 1px, 1px, rgba(255,255,255,0.5));
+          color: $tertiarytext;
+          @include border_radius(3px);
+          float: left;
+        }
+      }
+    }
+  }
+}

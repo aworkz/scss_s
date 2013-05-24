@@ -1,0 +1,134 @@
+.woocommerce, .woocommerce-page { // namespace to avoid conflict with common global class names
+
+  .checkout {
+    .col-2 {
+      h3 {
+        float:left;
+        clear:none;
+      }
+
+      .notes {
+        clear:left;
+      }
+
+      .form-row-first {
+        clear:left;
+      }
+    }
+    div.shipping-address {
+      padding: 0;
+      clear:left;
+      width: 100%;
+    }
+    #shiptobilling {
+      float: right;
+      line-height: 1.62em;
+      margin: 0 0 0 0;
+      padding: 0;
+
+      label {
+        font-size: 0.6875em;
+      }
+    }
+    .shipping_address {
+      clear:both;
+    }
+  }
+
+  /* Payment box - appears on checkout and page page */
+  #payment {
+    background: $secondary;
+    @include border_radius(5px);
+
+    ul.payment_methods {
+      text-align:left;
+      padding: 1em;
+      border-bottom: 1px solid darken( $secondary, 10 );
+      margin: 0;
+      list-style:none outside;
+      @extend %clearfix;
+      li {
+        line-height: 2em;
+        text-align:left;
+        margin: 0;
+        font-weight:normal;
+        input {
+          margin: 0 1em 0 0;
+        }
+        img {
+          vertical-align: middle;
+          margin: -2px 0 0 .5em;
+          position: relative;
+        }
+      }
+    }
+
+    div.form-row {
+      padding: 1em;
+      border-top: 1px solid lighten( $secondary, 5 );
+    }
+    #place_order {
+      float: right;
+      margin: 0;
+    }
+    .terms {
+      padding: 0 1em 0;
+      text-align: right;
+    }
+    div.payment_box {
+      position: relative;
+      width: 96%;
+      padding: 1em 2%;
+      margin: 1em 0 1em 0;
+      font-size: 0.92em;
+      @include border_radius(2px);
+      line-height: 1.5em;
+
+      @include vertical_gradient( darken( $secondary, 5 ), darken( $secondary, 10 ) );
+      @include box_shadow(0,1px,2px,0,rgba(0,0,0,0.25));
+      color: $secondarytext;
+      @include darkorlighttextshadow( $secondarytext );
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+      #cc-expire-month, #cc-expire-year {
+        width: 48%;
+        float:left;
+      }
+      #cc-expire-year {
+        float: right;
+      }
+      span.help {
+        font-size: 11px;
+        color: $subtext;
+        line-height: 13px;
+        font-weight:normal;
+      }
+      .form-row {
+        margin: 0 0 1em;
+
+        select {
+          width: 48%;
+          float:left;
+          margin-right: 3.8%;
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+        }
+      }
+      &:after {
+        content: "";
+        display:block;
+        border: 8px solid darken( $secondary, 5 ); /* arrow size / color */
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        position:absolute;
+        top: -3px;
+        left: 0;
+        margin: -1em 0 0 2em;
+      }
+    }
+  }
+}

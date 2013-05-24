@@ -1,0 +1,88 @@
+.woocommerce, .woocommerce-page { // namespace to avoid conflict with common global class names
+
+  .cart-collaterals {
+    @extend %clearfix;
+    width: 100%;
+    .related {
+      width: 30.75%;
+      float:left;
+    }
+
+    .cross-sells {
+      width: 48%;
+      float:left;
+
+      ul.products {
+        float:none;
+
+        li {
+          width: 48%;
+        }
+      }
+    }
+    .shipping_calculator {
+      width: 48%;
+      text-align: right;
+      margin: 20px 0 0 0;
+      clear: right;
+      float: right;
+      @extend %clearfix;
+      .button {
+        width: 100%;
+        float:none;
+        display:block;
+      }
+      .col2-set {
+        .col-1, .col-2 {
+          width: 47%;
+        }
+      }
+    }
+    .cart_totals {
+      float: right;
+
+      width: 48%;
+      text-align: right;
+      p {
+        margin: 0;
+        small {
+          color: $subtext;
+          font-size: 0.83em;
+        }
+      }
+      table {
+        border-collapse: separate;
+        @include border_radius(5px);
+        margin: 0 0 6px;
+        padding: 0;
+        tr:first-child {
+          th, td {
+            border-top: 0;
+          }
+        }
+        td, th {
+          padding: 6px 3px;
+        }
+        small {
+          display:block;
+          color: $subtext;
+        }
+        select {
+          width: 100%;
+        }
+      }
+      .discount td {
+        color: $highlight;
+      }
+      tr td, tr th {
+        border-top: 1px solid $secondary;
+        padding: 6px 6px;
+      }
+      a.button.alt {
+        width: 193px;
+        display:block;
+        font-size: 0.92em;
+      }
+    }
+  }
+}

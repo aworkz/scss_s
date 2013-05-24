@@ -1,0 +1,137 @@
+.woocommerce, .woocommerce-page { // namespace to avoid conflict with common global class names
+
+  form {
+    .form-row {
+      padding: 3px;
+      margin: 0 0 6px;
+      @extend %clearfix;
+
+      [placeholder]:focus::-webkit-input-placeholder {
+        -webkit-transition: opacity 0.5s 0.5s ease;
+        -moz-transition: opacity 0.5s 0.5s ease;
+        transition: opacity 0.5s 0.5s ease;
+        opacity: 0;
+      }
+
+      label {
+        display:block;
+      }
+      label.hidden {
+        visibility:hidden;
+      }
+      select {
+        width: 100%;
+        cursor: pointer;
+        margin: 0;
+      }
+      .required {
+        color: red;
+        font-weight:bold;
+        border: 0;
+      }
+      .input-checkbox {
+        display: inline;
+        margin: -2px 8px 0 0;
+        text-align: center;
+        vertical-align: middle;
+      }
+      label.checkbox {
+        display: inline;
+      }
+      input.input-text, textarea {
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+        width: 100%;
+        margin: 0;
+        outline: 0;
+        line-height: 1em;
+      }
+      textarea {
+        height: 3.5em;
+        line-height: 1.5em;
+        display:block;
+        -moz-box-shadow:none;
+        -webkit-box-shadow:none;
+        box-shadow:none;
+      }
+      &.validate-required.woocommerce-validated {
+        input.input-text {
+          background-image: url(/wp-content/plugins/woocommerce/assets/images/icons/valid.png);
+          background-position: 95% center;
+          background-repeat: no-repeat;
+
+          @media
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi) {
+            background-image: url(/wp-content/plugins/woocommerce/assets/images/icons/valid@2x.png);
+            background-size: 12px 9px;
+          }
+        }
+      }
+      &.validate-required.woocommerce-invalid {
+        input.input-text {
+          background-image: url(/wp-content/plugins/woocommerce/assets/images/icons/invalid.png);
+          background-position: 95% center;
+          background-repeat: no-repeat;
+
+          @media
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi) {
+            background-image: url(/wp-content/plugins/woocommerce/assets/images/icons/invalid@2x.png);
+            background-size: 12px 9px;
+          }
+        }
+        .chzn-single, .chzn-drop, input.input-text, select {
+          border-color: #fb7f88;
+        }
+      }
+      ::-webkit-input-placeholder {
+        line-height: 1em;
+        padding-top: 2px;
+      }
+      :-moz-placeholder {
+        line-height: 1em;
+        padding-top: 2px;
+      }
+      :-ms-input-placeholder {
+        line-height: 1em;
+        padding-top: 2px;
+      }
+    }
+    .form-row-first, .form-row-last {
+      float:left;
+      width: 47%;
+      overflow: visible;
+    }
+    .form-row-last {
+      float: right;
+    }
+    .form-row-wide {
+      clear: both;
+    }
+  }
+
+  form.login, form.checkout_coupon, form.register {
+    border: 1px solid darken( $secondary, 10 );
+    padding: 20px;
+    margin: 2em 0 2em 0px;
+    text-align:left;
+    @include border_radius(5px);
+  }
+
+  ul#shipping_method {
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0;
+      padding: .25em 0 .25em 22px;
+      text-indent: -22px;
+      list-style: none outside;
+    }
+    .amount {
+      font-weight: bold;
+    }
+  }
+}

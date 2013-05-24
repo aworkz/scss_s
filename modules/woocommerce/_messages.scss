@@ -1,0 +1,22 @@
+.woocommerce-message, .woocommerce-error, .woocommerce-info {
+
+  .button {
+    float: right;
+  }
+
+  li {
+    list-style:none outside;
+    padding-left:0;
+    margin-left:0;
+  }
+}
+
+.woocommerce-message {
+  @extend .message-success;
+}
+.woocommerce-info {
+  @extend .message-warning;
+}
+.woocommerce-error {
+  @extend .message-error;
+}

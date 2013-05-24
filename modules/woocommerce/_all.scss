@@ -1,0 +1,21 @@
+@import "woocommerce-mixins";
+@import "woocommerce-base";
+@import "colors";
+
+@import "global";
+// @import "star-rating";
+// @import "messages"; // TODO: add message classes to scss_s and extend with woocommerce message classes
+// @import "product-page";
+// @import "buttons";
+// @import "buttons-quantity";
+// @import "reviews";
+@import "tables";
+@import "cart";
+@import "cart-sidebar";
+@import "cart-page";
+@import "forms";
+@import "checkout";
+@import "order-page";
+@import "account-page";
+@import "widget-layered-nav";
+@import "widget-price-filter";
