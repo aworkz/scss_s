@@ -7,8 +7,9 @@
 // these variables are used to easily identify colors by name.
 
 $white                : #fff;
-$gray75               : #bfbfbf;
+$gray75               : #404040;
 $black                : #000;
+$text-black           : #1a1a1a;
 
 $attention-green      : #00b85d;
 $attention-red        : #ea3d2d;
@@ -27,7 +28,7 @@ $c-bg-header          : transparentize($black, .1);
 $c-bg-header-fallback : $black;
 $c-bg-footer          : $c-bg-main;
 
-$c-text-main          : $gray75;
+$c-text-main          : $text-black;
 $c-text-dark          : $black;
 $c-text-brand         : $c-brand;
 $c-text-invert        : $white;
