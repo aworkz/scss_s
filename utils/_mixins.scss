@@ -38,7 +38,7 @@
 }
 
 //margin
-@mixin margin ($t, $r, $b, $l) {
+@mixin margin ($t, $r:$t, $b:$t, $l:$r) {
   margin : $t * 1px   $r * 1px   $b * 1px   $l * 1px;
   margin : $t * .1rem $r * .1rem $b * .1rem $l * .1rem;
 }
@@ -68,7 +68,7 @@
 }
 
 //padding
-@mixin padding ($t, $r, $b, $l) {
+@mixin padding ($t, $r:$t, $b:$t, $l:$r) {
   padding : $t * 1px   $r * 1px   $b * 1px   $l * 1px;
   padding : $t * .1rem $r * .1rem $b * .1rem $l * .1rem;
 }
