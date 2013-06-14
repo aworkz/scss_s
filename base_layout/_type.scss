@@ -100,8 +100,8 @@ small, .mili {
 
 // text selection
 ::selection {
-  background: $white;
-  color: $c-brand;
+  background: $c-brand;
+  color: $c-text-invert;
 }
 
 // links
