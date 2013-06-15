@@ -7,7 +7,7 @@
 
 // sets container to the full grid width, plus $grid-padding on each side 
 %container {
-  box-sizing: content-box; // Suzy uses padding for the grid outer spacing, so this avoids errors in max-width
+  @include box-sizing(content-box); // Suzy uses padding for the grid outer spacing, so this avoids errors in max-width
   @include container();
 }
 
