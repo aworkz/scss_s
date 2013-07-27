@@ -61,6 +61,11 @@
 }
 
 // transitions
+%transition {
+  @include transition(all 0.25s ease-out);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); // this triggers hardware acceleration for animations
+}
 // fade in/out
   // when fading out, height:0 in combination with overflow:hidden, removes the element completely, allowing clicks under it.
   // may require you to define heigh and overflow in the element when it is in view, depending on how you are doing it.
