@@ -12,71 +12,11 @@
 }
 
 // columns (omega makes the column float contrary to grid flow)
-%span-columns-1 {
-  @include span-columns(1);
+@each $n in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 {
+  %span-columns-#{$n} {
+    @include span-columns($n);
+  }
+  %span-columns-#{$n}-omega {
+    @include span-columns($n omega);
+  }
 }
-%span-columns-1-omega {
-  @include span-columns(1 omega);
-}
-%span-columns-2 {
-  @include span-columns(2);
-}
-%span-columns-2-omega {
-  @include span-columns(2 omega);
-}
-%span-columns-3 {
-  @include span-columns(3);
-}
-%span-columns-3-omega {
-  @include span-columns(3 omega);
-}
-%span-columns-4 {
-  @include span-columns(4);
-}
-%span-columns-4-omega {
-  @include span-columns(4 omega);
-}
-%span-columns-5 {
-  @include span-columns(5);
-}
-%span-columns-5-omega {
-  @include span-columns(5 omega);
-}
-%span-columns-6 {
-  @include span-columns(6);
-}
-%span-columns-6-omega {
-  @include span-columns(6 omega);
-}
-%span-columns-7 {
-  @include span-columns(7);
-}
-%span-columns-7-omega {
-  @include span-columns(7 omega);
-}
-%span-columns-8 {
-  @include span-columns(8);
-}
-%span-columns-8-omega {
-  @include span-columns(8 omega);
-}
-%span-columns-9 {
-  @include span-columns(9);
-}
-%span-columns-9-omega {
-  @include span-columns(9 omega);
-}
-%span-columns-10 {
-  @include span-columns(10);
-}
-%span-columns-10-omega {
-  @include span-columns(10 omega);
-}
-%span-columns-11 {
-  @include span-columns(11);
-}
-%span-columns-11-omega {
-  @include span-columns(11 omega);
-}
-// I usually use 12 columns in my grids, so I'll stop here :P
-// for full width grid use 
