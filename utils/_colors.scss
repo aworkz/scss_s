@@ -22,19 +22,19 @@ $attention-red        : #ea3d2d;
 //main
 $c-brand              : $black;
 
-$c-bg-main            : transparentize($white, .25);
-$c-bg-main-fallback   : $white; // add an rgb fallback for alpha colors if you need backwards compatibility
+$c-bg-fallback        : $white; // add an rgb fallback for alpha colors if you need backwards compatibility
+$c-bg                 : transparentize($c-bg-fallback, .25);
 $c-bg-header          : transparentize($black, .1);
 $c-bg-header-fallback : $black;
-$c-bg-footer          : $c-bg-main;
+$c-bg-footer          : $c-bg;
 
-$c-text-main          : $text-black;
+$c-text               : $text-black;
 $c-text-dark          : $black;
 $c-text-brand         : $c-brand;
 $c-text-invert        : $white;
 
-$c-container          : transparentize($white, .5);
 $c-container-fallback : $white;
+$c-container          : transparentize($c-container-fallback, .5);
 $c-border             : $gray75;
 $c-shadow             : transparentize($black, .3); // no need for fallbacks whe you're going to use css3... =)
 
