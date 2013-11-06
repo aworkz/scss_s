@@ -24,8 +24,11 @@ ul ol,
 ol ul {
   @extend ol;
 }
+
+// links
 a {
   color: $c-link;
+  text-decoration: none;
 }
 a:visited {
   color: $c-visited;
@@ -34,6 +37,7 @@ a:hover,
 a:focus,
 a:active {
   color: $c-hover;
+  text-decoration: underline;
 }
 
 // headers
@@ -102,17 +106,6 @@ small, .mili {
 ::selection {
   background: $c-brand;
   color: $c-text-invert;
-}
-
-// links
-a,
-a:visited{
-  color: $c-brand;
-  text-decoration: none;
-}
-a:hover,
-a:active {
-  text-decoration: underline;
 }
 
 // other
