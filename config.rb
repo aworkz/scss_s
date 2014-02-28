@@ -11,6 +11,9 @@ sass_dir = "/"
 images_dir = "../images"
 javascripts_dir = "../js"
 
+# force relative paths for assets. change to false if you would like to use absolute paths (compass default)
+relative_assets = true
+
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 
