@@ -408,5 +408,5 @@ object {
 }
 /* Hide screen reader text */
 .screen-reader-text {
-	display: none;
+	display: none !important;
 }
