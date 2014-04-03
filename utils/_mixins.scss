@@ -122,7 +122,7 @@
   background-image: url($file + '.' + $type);
   background-repeat: no-repeat;
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dppx) {
     & {
       background-image: url($file + '@2x.' + $type);
       background-size: $width $height;
