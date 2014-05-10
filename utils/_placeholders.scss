@@ -40,8 +40,10 @@
   padding: 0;
 }
 // styles an horizontal list
+%hor-list,
 %horizontal-list {
   @extend %clearfix;
+  @extend %unstyled-list;
 
   li {
     float: left;
