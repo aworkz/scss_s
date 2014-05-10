@@ -39,6 +39,14 @@
   margin: 0;
   padding: 0;
 }
+// styles an horizontal list
+%horizontal-list {
+  @extend %clearfix;
+
+  li {
+    float: left;
+  }
+}
 // hiding text for image replacement. I don't remember where I got this technique from, but I love it
 // haven't tested it, but I think it's good for ltr and rtl text directions. tell me if it doesn't work in rtl, I'm too lazy to go try it =P
 %hide-text {
